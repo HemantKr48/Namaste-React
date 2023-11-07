@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hello World</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+        <!-- React is a library because it can be used in any part of page. As we can see Only div which has id:root will change , Others will remain unchanged. -->
+		<!-- Hello World written in html -->
+		<h1>He is Hemant</h1>
+		<div id="root">
+			<h1>Hello World</h1>
+		</div>
+
+		<div id="heading">OKK</div>
+		<h2>He is such a foolish person</h2>
+
+		<!-- 
+    Hello World written in Javascript -->
+		<script>
+			const header = document.createElement("h1");
+			header.innerHTML = "Hello World from Javascript";
+
+			const rootDiv = document.getElementById("root");
+			rootDiv.appendChild(header);
+		</script>
+
+		<!-- React CDN for using React in any part of web page-->
+		<!-- Hello world written in React -->
+		<script
+			crossorigin
+			src="https://unpkg.com/react@18/umd/react.development.js"
+		></script>
+		<script
+			crossorigin
+			src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+		></script>
+
+		<script src="./App.js"></script>
+	</body>
+</html>
